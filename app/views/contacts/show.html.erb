@@ -1,0 +1,26 @@
+<p id="notice">
+  <%= notice %>
+</p>
+
+<div>
+  <%= @contact.name%>  <%= @contact.last_name%>
+  </div>
+  <div>
+    <a href="tel:+1<%= @contact.phone%>">+1<%= @contact.phone%></a>
+  </div>
+  <div>
+    <%= @contact.address%>
+  </div>
+  <div>
+    <%= @contact.gender%>
+  </div>
+
+  <div id="age">
+    <%= @contact.age%>
+  </div>
+
+
+<div>
+  <%= link_to 'Edit', edit_contact_path(@contact) %> |
+  <%= link_to 'Back', contacts_path %>
+</div>

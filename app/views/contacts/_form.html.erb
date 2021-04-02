@@ -1,0 +1,45 @@
+
+<% if @contact.errors.any? %>
+  <h2>The following errors prevented the new contact from being saved</h2>
+  <ul>
+    <% @contact.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_with(model: @contact, local: true) do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div>
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+
+  <div>
+    <%= f.label :address %>
+    <%= f.text_area :address%>
+  </div>
+
+  <div>
+    <%= f.label :gender %>
+    <%= f.select :gender, ["", "male", "female", "prefer not answer"] %>
+  </div>
+
+  <div>
+    <%= f.label :age %>
+    <%= f.select :age, 1..100%>
+  </div>
+
+  <div>
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>
