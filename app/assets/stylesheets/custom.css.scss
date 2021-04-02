@@ -1,1 +1,53 @@
 @import "bootstrap/dist/css/bootstrap";
+.navbar {
+  background-color: black !important;
+  color: white !important;
+}
+
+// #nav {
+//   color: white !important;
+// }
+.navbar-light .navbar-brand {
+  color: aqua;
+  font-family: "Times New Roman", Times, serif;
+  font-size: xx-large;
+  margin: 10px;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: white;
+}
+
+#title {
+  font-family: fantasy;
+  color: white;
+}
+
+.navbar .navbar-brand #title:hover {
+  color: aqua;
+}
+
+#title:hover {
+  color: white;
+}
+
+.navbar-light .navbar-nav {
+  font-family: cursive;
+}
+
+li.nav-item a {
+  color: white;
+  padding: 1rem;
+}
+
+a#link1:hover {
+  color: aqua;
+}
+
+a#link2:hover {
+  color: aqua;
+}
+
+#button1 {
+  background-color: aqua;
+}
