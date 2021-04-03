@@ -1,37 +1,41 @@
-<p id="notice"><%= notice %></p>
+ <div id="home_page">
+  <div id="create_new_contact">
+    <p id="notice"><%= notice %></p>
+    <%= link_to 'Create New Contact', new_contact_path, class:"create_new_contact" %>
+  </div>
 
-<%= link_to 'New Contact', new_contact_path %>
-<br>
-<br>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name: </th>
-      <th>Lastname: </th>
-      <th>Phone: </th>
-      <th >Address: </th>
-      <th>Gender:</th>
-      <th>Age:</th>
-      <th colspan="3">Update</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @contacts.each do |contact| %>
+  <div class="table-responsive-lg">
+    <table class="table table-striped table-dark table-hover">
+    <thead id="table_header">
       <tr>
-        <td> <%= contact.name %></td>
-        <td> <%= contact.last_name %></td>
-        <td> <a href="tel:+1<%= contact.phone %>">+1<%= contact.phone %></a></td>
-        <td> <%= contact.address %></td>
-        <td> <%= contact.gender %></td>
-        <td> <%= contact.age %></td>
-        <td><%= link_to 'Show', contact %></td>
-        <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-        <td >
-          <%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </td>
+       <th scope="col">Name: </th>
+          <th scope="col">Lastname: </th>
+          <th scope="col">Phone: </th>
+          <th scope="col" >Address: </th>
+          <th scope="col">Gender:</th>
+          <th scope="col">Age:</th>
+          <th scope="col" colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+        <% @contacts.each do |contact| %>
+          <tr scope="row">
+            <td> <%= contact.name %></td>
+            <td> <%= contact.last_name %></td>
+            <td id="address_header"> <a href="tel:+1<%= contact.phone %>">+1<%= contact.phone %></a></td>
+            <td> <%= contact.address %></td>
+            <td> <%= contact.gender %></td>
+            <td> <%= contact.age %></td>
+            <td id="show_link"><%= link_to 'Show', contact %></td>
+            <td id="edit_link"><%= link_to 'Edit', edit_contact_path(contact) %></td>
+            <td id="delete_link">
+              <%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+ </div>

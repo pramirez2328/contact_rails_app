@@ -14,3 +14,10 @@
  *= require_tree .
  *= require_self
  */
+
+#main_container {
+  background-color: black;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin-top: 1rem;
+}

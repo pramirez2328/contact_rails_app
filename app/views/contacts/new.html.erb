@@ -1,8 +1,15 @@
-<h1>New Contact</h1>
-<div>
-<%= render 'form', contact: @contact  %>
-</div>
+<div id="edit">
 
-<p>
-  <%= link_to 'Cancel', contacts_path %>
-</p>
+  <div id="title_edit">
+    <h1>New Contact</h1>
+  </div>
+
+  <div>
+    <%= render 'form', contact: @contact %>
+  </div>
+
+  <div id="bottom_links">
+    <%= link_to 'Cancel', contacts_path %>
+  </div>
+
+</div>

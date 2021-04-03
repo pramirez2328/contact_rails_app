@@ -1,3 +1,135 @@
 // Place all the styles related to the Contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+$primary-color: aqua;
+#home_page {
+  width: 90%;
+  margin: auto;
+}
+
+#table_header {
+  color: aqua;
+}
+
+#create_new_contact {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 150%;
+  letter-spacing: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+#create_new_contact .create_new_contact {
+  color: white;
+}
+
+td#address_header>a {
+  color: aqua;
+}
+
+td#edit_link>a {
+  color: yellow;
+}
+
+td#delete_link>a {
+  color: #f70606;
+}
+
+td#show_link>a {
+  color: rgb(76, 247, 113);
+}
+
+#form {
+  font-weight: bold;
+  border: solid aqua 2px;
+  padding: 1.5rem 3rem 0 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.navbar a.navbar-brand {
+  font-size: 140%;
+}
+
+#title_edit {
+  margin-top: 1rem;
+  color: white;
+  font-family: fantasy;
+}
+
+.new_edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.form_label {
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+.inputs {
+  border: solid 2px rgb(2, 248, 248);
+  padding: 0.3rem;
+  width: 100%;
+}
+
+#contact_gender {
+  border: solid 2px rgb(2, 248, 248);
+}
+
+#contact_age {
+  border: solid 2px rgb(2, 248, 248);
+}
+
+#submit {
+  border: solid 2px rgb(2, 248, 248);
+  font-size: larger;
+  width: 100%;
+  font-family: fantasy;
+}
+
+#submit:hover {
+  background-color: aqua;
+}
+
+.bottom_links {
+  color: aqua;
+  font-weight: bolder;
+}
+
+div.bottom_links>a {
+  color: aliceblue;
+}
+
+#show_id {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: solid 2px aqua;
+  width: 70%;
+  margin: auto;
+  padding: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 170%;
+  height: 500px;
+}
+
+.show_class {
+  color: white;
+}
+
+.show_class>p {
+  color: aqua;
+  font-size: 200%;
+}
+
+.show_class>a {
+  color: white;
+}
+
+.show_class>a:hover {
+  color: aqua;
+}

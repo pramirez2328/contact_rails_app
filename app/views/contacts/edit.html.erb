@@ -1,6 +1,15 @@
-<h1>Editing Contact</h1>
+<div class="new_edit">
 
-<%= render 'form', contact: @contact %>
+  <div id="title_edit">
+    <p> Submit the form again, once is modifided!</p>
+  </div>
 
-<%= link_to 'Show', @contact %> |
-<%= link_to 'Back', contacts_path %>
+  <div>
+    <%= render 'form', contact: @contact %>
+  </div>
+
+  <div class="bottom_links">
+    <%= link_to 'Show', @contact %> | <%= link_to 'Back', contacts_path %>
+  </div>
+
+</div>

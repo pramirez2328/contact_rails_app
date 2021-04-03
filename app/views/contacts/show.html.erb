@@ -1,26 +1,30 @@
-<p id="notice">
-  <%= notice %>
-</p>
 
-<div>
-  <%= @contact.name%>  <%= @contact.last_name%>
+
+<div id="show_id">
+  <p id="notice">
+    <%= notice %>
+  </p>
+  <div class="show_class">
+    <p><%= @contact.name%>  <%= @contact.last_name%></p>
   </div>
-  <div>
+
+  <div class="show_class">
     <a href="tel:+1<%= @contact.phone%>">+1<%= @contact.phone%></a>
   </div>
-  <div>
+
+  <div class="show_class">
     <%= @contact.address%>
   </div>
-  <div>
+
+  <div class="show_class">
     <%= @contact.gender%>
   </div>
 
-  <div id="age">
+  <div class="show_class" >
     <%= @contact.age%>
   </div>
 
-
-<div>
-  <%= link_to 'Edit', edit_contact_path(@contact) %> |
-  <%= link_to 'Back', contacts_path %>
+  <div class="bottom_links">
+    <%= link_to 'Edit', edit_contact_path(@contact) %> | <%= link_to 'Back', contacts_path %>
+  </div>
 </div>
