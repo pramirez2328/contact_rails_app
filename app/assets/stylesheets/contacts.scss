@@ -11,6 +11,15 @@ $primary-color: aqua;
   color: aqua;
 }
 
+#edit {
+  width: 24em;
+  margin: auto;
+}
+
+#errors {
+  color: red;
+}
+
 #create_new_contact {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
@@ -55,6 +64,7 @@ td#show_link>a {
   margin-top: 1rem;
   color: white;
   font-family: fantasy;
+  text-align: center;
 }
 
 .new_edit {
@@ -97,6 +107,7 @@ td#show_link>a {
 .bottom_links {
   color: aqua;
   font-weight: bolder;
+  text-align: center;
 }
 
 div.bottom_links>a {
@@ -119,6 +130,7 @@ div.bottom_links>a {
 
 .show_class {
   color: white;
+  font-size: 100%;
 }
 
 .show_class>p {

@@ -20,11 +20,11 @@
   padding-bottom: 2rem;
   padding-top: 2rem;
   margin-top: 1rem;
+  color: white;
 }
 
 h6 {
+  margin-top: 1rem;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
-  position: absolute;
-  bottom: 0;
 }
